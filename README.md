@@ -35,11 +35,13 @@ jennifer-kubernetes-proxy-0.0.1.zip jennfier-kubernetes-proxy
 
 ## Proxy 서버 설정
 ### Proxy 서버 환경설정 
-<!-- // 환경변수 설정 -->
+| 환경변수 | 예 |
+| --- | --- |
+| JENNIFER_KUBERNETES_PROXY_CONF | /etc/jennifer/conf/server_proxy.conf |
+
 ### Proxy 서버의 옵션 설정
 Jennifer Kubernetes Proxy 서버를 관리하는데 필요한 기본을 설정하는 파일이다.  
-Proxy 서버의 홈 디렉토리 config/jennifer.conf 에 존재하고 있다.  
-<!-- 환경설정 파일에서 위치와 파일명을 변경할 수 있다.  -->
+Proxy 서버의 홈 디렉토리 config/jennifer.conf 에 존재하고 있으며 환경설정 파일에서 위치와 파일명을 변경할 수 있다. 
 아래는 jennifer.conf 에 대한 기본적인 설정에 대한 설명이다.
 | 설정 | 기본값 | 설명 |
 | --- | --- | --- |
