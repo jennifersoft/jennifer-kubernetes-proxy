@@ -15,11 +15,16 @@ Jennifer5 가 https 를 사용하는 경우 Proxy 에도 키설정을 해주어�
 
 # 다운로드
 
+다음 명령어를 사용하여 설치 파일 다운로드  
+설치파일은 `tar.gz` 와 `zip` 두개다 제공됨  
+```sh
+wget http://k8s.jennifersoft.com/jennifer-kubernetes-proxy-0.0.1.tar.gz
+``` 
 
 ```sh
-$ unzip jennifer-kubernetes-proxy-0.0.1.zip
+$ tar xvfz jennifer-kubernetes-proxy-0.0.1.tar.gz
 $ ls 
-jennifer-kubernetes-proxy-0.0.1.zip jennfier-kubernetes-proxy
+jennifer-kubernetes-proxy-0.0.1.tar.gz jennfier-kubernetes-proxy
 ```
 
 # 제니퍼 쿠버네티스 프록시 디렉토리 구성
@@ -41,8 +46,8 @@ jennifer-kubernetes-proxy-0.0.1.zip jennfier-kubernetes-proxy
 
 ### Proxy 서버의 옵션 설정
 Jennifer Kubernetes Proxy 서버를 관리하는데 필요한 기본을 설정하는 파일이다.  
-Proxy 서버의 홈 디렉토리 config/jennifer.conf 에 존재하고 있으며 환경설정 파일에서 위치와 파일명을 변경할 수 있다. 
-아래는 jennifer.conf 에 대한 기본적인 설정에 대한 설명이다.
+Proxy 서버의 홈 디렉토리 `config/jennifer.conf` 에 존재하고 있으며 환경설정 파일에서 위치와 파일명을 변경할 수 있다. 
+아래는 `jennifer.conf` 에 대한 기본적인 설정에 대한 설명이다.
 | 설정 | 기본값 | 설명 |
 | --- | --- | --- |
 | jennifer_proxy_port | 3300 | 프록시서버가 사용할 포트. 제니퍼 뷰서버에서 연결하기 위한 포트이다 |
