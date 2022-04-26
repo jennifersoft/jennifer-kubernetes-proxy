@@ -93,3 +93,23 @@ Proxy 서버의 홈 디렉토리 config/jennifer.conf 에 존재하고 있다.
 
 
 # Jennifer5 대시보드 설정
+1. Jennifer5 뷰서버에 Jennifer Kubernetes Proxy 주소를 등록한다.
+    ```sh
+    $ cd /home/jennifer/jennfier5-server/server.view
+    $ vi ./conf/server_view.conf
+    #Jennifer5 뷰서버가 https로 구동 중이라면 Jennifer Kubernetes Proxy 도 https로 구동해야 합니다.
+    k8s_proxy_url = http://k8s.proxy.com
+
+
+2. Jennifer5 뷰서버 재시작
+    ```sh
+    $ /home/jennifer/jennfier5-server/server.view/bin/shutdown_view.sh
+    $ /home/jennifer/jennfier5-server/server.view/bin/startup_view.sh
+3. 관리> 그룹 > 메뉴별 권한 설정
+
+    > k8s_proxy_url가 추가 되었을때만 메뉴에 표시됩니다.
+    > 
+    관리 페이지에서 '시스템 관리자 (K8S)', '시스템리소스 (K8S)' 체크후 저장
+
+
+
